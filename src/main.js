@@ -1,8 +1,7 @@
-//  import $ from 'jquery'; Uncomment when jquery is used
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-import { AddressBook, Person } from "./backend";
+import { AddressBook, Person } from "./scripts";
 
 const handleSubmit = (addressBook) => {
   const name = document.getElementById("personName").value;
@@ -31,3 +30,9 @@ window.addEventListener("load", () => {
     addToPage(book);
   });
 });
+
+// const book = new AddressBook();
+// window.addEventListener("load", ()=>{
+//   const form = document.querySelector("form");
+//   form.addEventListener("submit", handleSubmit);
+// })
